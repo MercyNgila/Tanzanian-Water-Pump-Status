@@ -3,7 +3,10 @@
 
 ## Introduction
 
-In this Project, I will complete a machine learning workflow using classification solutions, including data preparation, modeling (including hyperparameter tuning), and final model evaluation.
+![running water](unsplash_water .jpeg)
+
+<span>Photo by <a href="https://media.istockphoto.com/photos/poor-indian-children-asking-for-fresh-water-india-picture-id637020090?s=612x612">Bartosz Hadyniak</a> on <a 
+href="https://www.istockphoto.com/photo/poor-indian-children-asking-for-fresh-water-india-gm637020090-113379827">Unsplash</a></span>
 
 
 ## Business Understanding
@@ -49,16 +52,17 @@ The data that I will use for this project comes from the Taarifa waterpoints das
 Taarifa is an open source platform for the crowd sourced reporting and triaging of infrastructure related issues. It acts a a bug tracker for real world which helps to engage citizens with their local government. It has been working on an Innovation Project in Tanzania, with various partners.
 
 There are three datasets for this project:
+ 1. Training set labels (59400 waterpoints × 2 features)
+ 2. Training set values (59400 waterpoints × 40 features)
+ 3. Test set values (14850 waterpoints × 40 features)
 
-1.Training set labels (59400 waterpoints × 2 features)
-2. Training set values (59400 waterpoints × 40 features)
-3.Test set values (14850 waterpoints × 40 features)
+For this project I will use datasets 1 & 2. 
 
-For this project I will use datasets 1 & 2.
+The target variable will be status_group which details the functionality of a waterpoint
 
-### Columns in the dataset
+### Features include:
 
-- amount_tsh            - Total static head (amount water available to waterpoint)
+- amount_tsh           - Total static head (amount water available to waterpoint)
 - date_recorded         - The date the row was entered
 - funder                - Who funded the well
 - gps_height            - Altitude of the well
@@ -97,28 +101,56 @@ For this project I will use datasets 1 & 2.
 - source_class          - The source of the water
 - waterpoint_type       - The kind of waterpoint
 - waterpoint_type_group - The kind of waterpoint
-- status_group          - Functionality of waterpoint
+
+
 
 
 ## Project Plan
 
-1. Data Loading and Understanding
-2. Data Cleaning
-3. Exploratory Descriptive Analysis
-4. Pre-processing Data
-5. Modelling
-6. Evaluation
-7. Conclusion
-8. Recommendation
+1. Data Preparation
+       - Loading Libraries
+       - Loading data
+       - Descriptive Exploration
+       - Data Cleaning
+       - Exploratory Descriptive Analysis (EDA)
+       - Pre-processing Data
+       
+2.  Modelling
+        - Train test split
+        - Baseline Model
+        - Random Forest
+        - Decision Tree
+        - Logistic Regression
+        - Evaluation
+        
+4.  Conclusion
+
+5.  Recommendation
+
+## Modelling
+For modelling I will apply:
+
+1. Perform an X_Train-y_Test Split
+
+2. Build and Evaluate a Baseline Model
+
+3. Grid search to Find the Random Forest Model
+
+4. Build Iterative Models to Find the Best Decision Tree Model
+
+5. Build and Evaluate Additional Logistic Regression Models
+
+6. Choose and Evaluate a Final Model
 
 ## Evaluation
-- classification 
-- classification 
-- classification
+
+The best performing model was picked as the final model. The best model was the base Random Forest Regression model. 
+Its metric was: Accuracy:  0.8003032089615093. This translates to an accuracy of 80.03%
+
 
 ## Conclusion
 
-bueborwnknpknrpginhihqeqhoquehohhnihwrpihdofhgihdpihfpivhndxbojfvjoabxsojbfvjobnsxojbfvjbasxbcjfdbnojasbovjbojdbvfjobdojabvojbndojbvfojbdojbfdjbdjbvfjbedjbvdfojndejbvfojbdwojbvjbdwjbvjbdwojbvfojoebojbeojefbwojdwbojbdwojbfvojbdoajbnfjobndejbrjbwdqojbvjobdqwojbj
+Despite rigorous applications of different classification models to achieve the best accuracy, the final model at 80.03% is a good prediction model that is ready for deployment. With the high but balanced precision and recall results, the ML model advices greatly on which waterpoints to prioritise efforts on which further informs wise investments.
 
 ## Recommendation
 
