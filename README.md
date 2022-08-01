@@ -3,7 +3,7 @@
 
 ## Introduction
 
-![running water](unsplash_water.jpeg)
+![unsplash_water ](https://user-images.githubusercontent.com/104272695/182146245-7ce35135-1e62-4959-9860-bdc4874e1f5b.jpeg)
 
 <span>Photo by <a href="https://media.istockphoto.com/photos/poor-indian-children-asking-for-fresh-water-india-picture-id637020090?s=612x612">Bartosz Hadyniak</a> on <a 
 href="https://www.istockphoto.com/photo/poor-indian-children-asking-for-fresh-water-india-gm637020090-113379827">Unsplash</a></span>
@@ -131,11 +131,17 @@ The target variable will be status_group which details the functionality of a wa
 
 I split the data into training and test. I used the training to fit the models and the test data to assess the models. The first model was a baseline using Decision Trees. Random Forest, Logistic Regression, KNN and Gaussian classification were also used. From these, the top three (Random Forest, Decision Tree, Linear Regression) were picked and tuned to produce better accuracy. 
 
+![image](https://user-images.githubusercontent.com/104272695/182146414-6ef8f0af-32c3-4ae3-9f97-0e7fd13e1a5f.png)
+
+
 
 ## Evaluation
 
 The best performing model was picked as the final model. The best model was the base Random Forest Regression model. 
 Its metric was: Accuracy:  0.8003032089615093. This translates to an accuracy of 80.03%
+
+
+![image](https://user-images.githubusercontent.com/104272695/182146452-80d7ccf1-9f81-4533-897e-25f31f70cc93.png)
 
 
 ## Conclusion
@@ -155,15 +161,15 @@ CSV Files:
 
 The raw data files which obtained by DataDriven can be found ;
 
-https://github.com/fredtush/phase-3-project/tree/main/data
+https://github.com/MercyNgila/Pump-It-Up/tree/main/data
 
 Notebooks:
 
-https://github.com/fredtush/phase-3-project/blob/main/student.ipynb
+https://github.com/MercyNgila/Pump-It-Up/blob/main/Pump%20It%20Up%20Notebook.ipynb
 
 Presentation:
 
 Presentation can be found from here in .pdf format ;
 
-https://github.com/fredtush/phase-3-project/blob/main/presentation.pdf
+https://github.com/MercyNgila/Pump-It-Up/blob/main/Pump%20It%20Up%20-%20Tanzania%20Project.pdf
 
