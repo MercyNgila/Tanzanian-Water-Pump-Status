@@ -40,14 +40,14 @@ This ML model will be used to choose the best strategy moving forward.
 
 ## Objectives
 
-- To build a ML prediction model for condition of waterpumps
+- To build a ML model that predicts the conditions of water pumps with an acceptably high accuracy.
 - To compare different ML models predictions to achieve highest accuracy
 - Advice the client on best strategy
 
 
 ##  Data Understanding
 
-The data that I will use for this project comes from the Taarifa waterpoints dashboard, which aggregates data from the Tanzania Ministry of Water.
+The data that I will use for this project comes from the Taarifa waterpoints dashboard, which has been aggregated from the Tanzania Ministry of Water.
 
 Taarifa is an open source platform for the crowd sourced reporting and triaging of infrastructure related issues. It acts a a bug tracker for real world which helps to engage citizens with their local government. It has been working on an Innovation Project in Tanzania, with various partners.
 
@@ -128,19 +128,9 @@ The target variable will be status_group which details the functionality of a wa
 5.  Recommendation
 
 ## Modelling
-For modelling I will apply:
 
-1. Perform an X_Train-y_Test Split
+I split the data into training and test. I used the training to fit the models and the test data to assess the models. The first model was a baseline using Decision Trees. Random Forest, Logistic Regression, KNN and Gaussian classification were also used. From these, the top three (Random Forest, Decision Tree, Linear Regression) were picked and tuned to produce better accuracy. 
 
-2. Build and Evaluate a Baseline Model
-
-3. Grid search to Find the Random Forest Model
-
-4. Build Iterative Models to Find the Best Decision Tree Model
-
-5. Build and Evaluate Additional Logistic Regression Models
-
-6. Choose and Evaluate a Final Model
 
 ## Evaluation
 
@@ -150,8 +140,30 @@ Its metric was: Accuracy:  0.8003032089615093. This translates to an accuracy of
 
 ## Conclusion
 
-Despite rigorous applications of different classification models to achieve the best accuracy, the final model at 80.03% is a good prediction model that is ready for deployment. With the high but balanced precision and recall results, the ML model advices greatly on which waterpoints to prioritise efforts on which further informs wise investments.
+The final model at 80.03% is a good prediction model that is ready for deployment. With the high but balanced precision and recall results, the ML model advices greatly on which waterpoints to prioritise efforts on which further informs wise investments. There are different qualities of water in the different functional pumps. All waterpoints with huge investment costs are functional. Gravity and Hand pump water pumps are the most functional
 
 ## Recommendation
 
-bueborwnknpknrpginhihqeqhoquehohhnihwrpihdofhgihdpihfpivhndxbojfvjoabxsojbfvjobnsxojbfvjbasxbcjfdbnojasbovjbojdbvfjobdojabvojbndojbvfojbdojbfdjbdjbvfjbedjbvdfojndejbvfojbdwojbvjbdwjbvjbdwojbvfojoebojbeojefbwojdwbojbdwojbfvojbdoajbnfjobndejbrjbwdqojbvjobdqwojbj
+- With few functional waterpumps that need repairs, it would be a great investment opportunity to repair them before they turn non functional.
+- The damage requiring repair should however be accesed to know if it is cheaper repairing or having a new one.
+- Futher investigation should be done on the highly technical water pumps to understand if communities would need training to use them and if they are sustainable due to costs involved. e.g Fuel Purchase
+- With the Machine Learning model having high accuracy prediction, priority should be placed on conditions of waterpumps and accessibility to hasten implementation of project
+
+## Repository Guide
+
+CSV Files:
+
+The raw data files which obtained by DataDriven can be found ;
+
+https://github.com/fredtush/phase-3-project/tree/main/data
+
+Notebooks:
+
+https://github.com/fredtush/phase-3-project/blob/main/student.ipynb
+
+Presentation:
+
+Presentation can be found from here in .pdf format ;
+
+https://github.com/fredtush/phase-3-project/blob/main/presentation.pdf
+
