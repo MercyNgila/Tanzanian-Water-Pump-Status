@@ -3,7 +3,7 @@
 
 ## Introduction
 
-![running water](unsplash_water .jpeg)
+![running water](unsplash_water.jpeg)
 
 <span>Photo by <a href="https://media.istockphoto.com/photos/poor-indian-children-asking-for-fresh-water-india-picture-id637020090?s=612x612">Bartosz Hadyniak</a> on <a 
 href="https://www.istockphoto.com/photo/poor-indian-children-asking-for-fresh-water-india-gm637020090-113379827">Unsplash</a></span>
