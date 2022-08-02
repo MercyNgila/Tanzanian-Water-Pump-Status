@@ -140,20 +140,28 @@ I split the data into training and test. I used the training to fit the models a
 The best performing model was picked as the final model. The best model was the base Random Forest Regression model. 
 Its metric was: Accuracy:  0.8003032089615093. This translates to an accuracy of 80.03%
 
+The feature importance from the final model was:
 
-![image](https://user-images.githubusercontent.com/104272695/182146452-80d7ccf1-9f81-4533-897e-25f31f70cc93.png)
 
 
 ## Conclusion
 
-The final model at 80.03% is a good prediction model that is ready for deployment. With the high but balanced precision and recall results, the ML model advices greatly on which waterpoints to prioritise efforts on which further informs wise investments. There are different qualities of water in the different functional pumps. All waterpoints with huge investment costs are functional. Gravity and Hand pump water pumps are the most functional
+- The final model (RandonForest) at 80.03% is a good prediction model that is ready for deployment. 
+- The accuracy provides great insights on conditions of waterpoints that will aid greatly in planning, prioritising and investment.
+- There are different qualities of water in the different functional pumps but most of them have soft water.
+- All waterpoints with that had huge investment costs are functional
+- Gravity and Hand pump water pumps are the most functional amongst communities.
+- It is concerning that there the number of non functional water pumps is a lot
 
 ## Recommendation
 
-- With few functional waterpumps that need repairs, it would be a great investment opportunity to repair them before they turn non functional.
-- The damage requiring repair should however be accesed to know if it is cheaper repairing or having a new one.
-- Futher investigation should be done on the highly technical water pumps to understand if communities would need training to use them and if they are sustainable due to costs involved. e.g Fuel Purchase
-- With the Machine Learning model having high accuracy prediction, priority should be placed on conditions of waterpumps and accessibility to hasten implementation of project
+- With few functional waterpumps that need repairs, it would be a great investment opportunity to repair them before they turn non functional. The repair should however be accessed to know if it is cheaper repairing or having a new one.
+
+- Futher investigation should be done on the highly technical water pumps to understand if communities would need training to use them and if they are sustainable due to costs involved. e.g Fuel Purchase.
+
+- Priority could be placed on high population areas could be prioritised in more access to water and monitoring their waterpumps.
+
+- More research could be done to understand what causes waterpumps to be non functional. This could help avoid setting up new waterpumps in areas where there were already.
 
 ## Repository Guide
 
