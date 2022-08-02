@@ -142,6 +142,7 @@ Its metric was: Accuracy:  0.8003032089615093. This translates to an accuracy of
 
 The feature importance from the final model was:
 
+![Feature Importance](https://user-images.githubusercontent.com/104272695/182406848-b5016a8c-ed9a-45c7-98a5-97504d323314.png)
 
 
 ## Conclusion
